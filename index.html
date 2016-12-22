@@ -1,0 +1,60 @@
+<html>
+	<head>
+	<title>JavaScript Object Browser</title>
+	<style>
+		.warning {
+			color: red;
+		}
+		#panel { 
+			position:fixed; 
+			top:0px; 
+			right:0px; 
+			margin-top:20px; 
+			background-color:rgba(200,200,200,.8); 
+		}
+		#panelToggle { 
+			position:fixed; 
+			top:0px; 
+			right:0px; 
+			margin-top:5px; 
+			background-color:rgba(200,200,200,.8); 
+		}
+		#selectedInfo {
+			margin-left:10px;
+		}
+		
+		#libraries {
+			width: 600px;
+		}
+		
+		#consoleInput {
+			width:300px;
+			height:23px;
+		}
+	</style>
+	</head>
+	<body>
+		<input type="checkbox" id="panelToggle" checked=checked/>
+		<div id="panel">
+			<span>JavaScript Object Browser - By Jonathan Duck</span><br>
+			<input id="reload" type="button" value="Reload">
+			Libraries (one per line): 
+			<span class="warning">Warning: This uses JavaScript's <a target="__blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#dont-use-it">eval</a> function.</span><br>
+			<span>These libraries will have full access to all chrome extension APIs. It is very dangerous.</span><br>
+			<textarea id="libraries"></textarea><br>
+			<hr>
+			<h2>Info:</h2><div id="selectedInfo"></div>
+			<hr>
+			<input id="consoleToggle" type="checkbox">
+			<label for="consoleToggle">JavaScript Console:</label>
+			<div id="console" style="display:none;">
+				<textarea id="consoleInput"></textarea>
+				<input id="consoleRun" type="button" value="Run">
+				<br><span id="consoleOutput"></span>
+			</div>
+		</div>
+		<div id="sidebar">
+		</div>
+	<script src="index.js"></script>
+	</body>
+</html>

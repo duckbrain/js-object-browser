@@ -1,0 +1,23 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "local_path": "index.html",
+         "manifest_version": 2
+      }
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; script-src 'self' 'unsafe-inline'; object-src 'self'",
+   "description": "Browse through the objects in the default Javascript library and any local or online libraries",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0N2IklpjHaNfNh2sIZNmzHiSUVYEB6GIoevPXAKXQlQLeHkAC/sVXUB6AFPHtKXITkr3uYX0k/v+SO+SxMMO0ETNfonwIWIVfQqBA1m0f7HedfP+nF+p/KQAwRDI+/oLxBc9sb3yhpxz9z5Vdp7bQRyrCgcDlxFLNgRA6Lkd0xQIDAQAB",
+   "manifest_version": 2,
+   "name": "Javascript Object Browser",
+   "permissions": [ "*://*/*", "activeTab", "alarms", "background", "bookmarks", "browsingData", "chrome://favicon/", "clipboardRead", "clipboardWrite", "contentSettings", "contextMenus", "cookies", "debugger", "fileBrowserHandler", "fontSettings", "geolocation", "history", "idle", "management", "nativeMessaging", "notifications", "pageCapture", "power", "privacy", "proxy", "storage", "system.cpu", "system.display", "system.memory", "system.storage", "tabCapture", "tabs", "topSites", "tts", "ttsEngine", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "permissions_app": [ "declarativeContent", "desktopCapture", "dns", "downloads", "gcm", "identity", "pushMessaging", "processes" ],
+   "permissions_dev": [ "infobars", "sessions", "signedInDevices", "ledger", "enterprise.platformKeys", "location" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.1"
+}
