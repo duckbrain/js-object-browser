@@ -113,35 +113,35 @@
 			text.innerHTML = x + ' <span style="color:blue;">' + type + '</span>';
 		switch (type) {
 			case "boolean":
-				icon.src = 'boolean.png';
+				icon.src = 'public/images/installed_ovr.png';
 				break;
 			case "string":
-				icon.src = 'string.png';
+				icon.src = 'public/images/template_obj.png';
 				break;
 			case "number":
-				icon.src = 'number.png';
+				icon.src = 'public/images/correction_cast.png';
 				break;
 			case "object":
-				icon.src = 'object.png';
+				icon.src = 'public/images/envvar_obj.png';
 				break;
 			case "function":
-				icon.src = 'function.png';
+				icon.src = 'public/images/run_co.png';
 				for (var y in instance) {
-					icon.src = 'class.png';
+					icon.src = 'public/images/class_obj.png';
 					break;
 				}
 				break;
 			case "event":
-				icon.src = 'event.png';
+				icon.src = 'public/images/methpro_obj.png';
 				break;
 			default:
-				icon.src = 'none.png';
+				icon.src = 'public/images/maxlevel_co.png';
 				break;
 		}
 		if (instance == null)
 			if (x[0] == 'o' && x[1] == 'n')
-				icon.src = 'event.png';
-			else icon.src = 'none.png';
+				icon.src = 'public/images/methpro_obj.png';
+			else icon.src = 'public/images/maxlevel_co.png';
 		header.appendChild(icon);
 		header.appendChild(text);
 		header.tag = instance;
